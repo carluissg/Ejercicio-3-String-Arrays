@@ -6,11 +6,11 @@ function analizaPalabras(palabras) {
         console.log("Palabra" + [i + 1] + "= " + palabra);
         console.log("Numero de Caracteres: " + palabra.length);
         console.log("Deletreo: " + palabra.split("").join("_"));
-        if ((palabra.length % 2 === 0) && (palabra.charAt(0).toUpperCase())) {
+        if ((palabra.length % 2 === 0) && ((palabra.charAt(0) === (palabra.charAt(0).toUpperCase())))) {
             console.log("La palabra es par y empieza por mayúscula");
-        } else if (palabra.charAt(0).toUpperCase()) {
+        } else if ((palabra.length % 2 === 1) && (palabra.charAt(0).toUpperCase())) {
             console.log("La palabra es impar y empieza por mayúscula");
-        } else if ((palabra.length % 2 === 0) && (palabra.charAt(0).toLowerCase())) {
+        } else if ((palabra.length % 2 === 0) && (palabra.charAt(0))) {
             console.log("La palabra es par y no empieza por mayúscula");
         } else {
             console.log("La palabra es impar y no empieza por mayúscula");
